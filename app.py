@@ -18,7 +18,7 @@ with data_set:
     df = df.dropna()
     st.write(df.head(10))
     st.text("This is a countplot between Males and Females")
-    st.bar_chart(df['sex'].value_counts())
+    st.bar_chart(df['Sex'].value_counts())
     st.subheader("This is a countplot between Different Classes")
     st.bar_chart(df['class'].value_counts())
     st.bar_chart(df['age'].sample(10))  #for head(10)
