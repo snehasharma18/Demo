@@ -20,7 +20,7 @@ with data_set:
     st.text("This is a countplot between Males and Females")
     st.bar_chart(df['Sex'].value_counts())
     st.subheader("This is a countplot between Different Classes")
-    st.bar_chart(df['class'].value_counts())
+    st.bar_chart(df['Pclass'].value_counts())
     st.bar_chart(df['age'].sample(10))  #for head(10)
 
 with features:
