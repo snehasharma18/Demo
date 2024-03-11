@@ -15,7 +15,7 @@ with header:
 with data_set:
     st.header("Dataset")
     st.text("this is my dataset")
-    df = sns.load_dataset('titanic')
+    df = pd.read_csv('train.csv')
     df = df.dropna()
     st.write(df.head(10))
     st.text("This is a countplot between Males and Females")
